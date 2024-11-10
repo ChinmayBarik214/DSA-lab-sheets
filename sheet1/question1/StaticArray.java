@@ -4,54 +4,13 @@ public class StaticArray {
     public static void main(String[] args) {
         // Creating an instance of StaticArray
         StaticArray o = new StaticArray();
-
         // Initializing an integer array of size 5
         int a[] = new int[5];
-
-        // Test inserting elements at the end of the array
-        System.out.println("Inserting elements at the end:");
-        for (int i = 0; i < a.length; i++) {
-            o.insertAtEnd(a, i + 1);
-        }
+        // test cases
+        o.insertAtStart(a, 1);
+        o.insertAtStart(a, 2);
+        o.deleteAtIndex(a, 1);
         o.print(a);
-        System.out.println();
-
-        // Test inserting an element at a specific position
-        System.out.println("\nInserting element 99 at position 2:");
-        o.insertAtPosition(a, 2, 99);
-        o.print(a);
-        System.out.println();
-
-        // Test inserting an element at the start of the array
-        System.out.println("\nInserting element 77 at the start:");
-        o.insertAtStart(a, 77);
-        o.print(a);
-        System.out.println();
-
-        // Test deleting the first element
-        System.out.println("\nDeleting the first element:");
-        o.deleteAtStart(a);
-        o.print(a);
-        System.out.println();
-
-        // Test deleting an element at a specific index
-        System.out.println("\nDeleting element at index 2:");
-        o.deleteAtIndex(a, 2);
-        o.print(a);
-        System.out.println();
-
-        // Test deleting the last element
-        System.out.println("\nDeleting the last element:");
-        o.deleteAtEnd(a);
-        o.print(a);
-        System.out.println();
-
-        // Test attempting to delete from an empty array
-        System.out.println("\nClearing the array and attempting to delete from an empty array:");
-        while (o.count > 0) {
-            o.deleteAtEnd(a);
-        }
-        o.deleteAtEnd(a); // Attempt to delete from an empty array
     }
 
     // Method to insert a value at a specific position

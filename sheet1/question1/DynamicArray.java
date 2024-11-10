@@ -7,49 +7,14 @@ public class DynamicArray {
     public static void main(String[] args) {
         // Create a DynamicArray instance
         DynamicArray d = new DynamicArray();
-
-        // Test inserting elements at the end
-        System.out.println("Inserting elements at the end:");
-        for (int i = 0; i < 5; i++) {
-            d.insertAtEnd(i + 1); // Insert each number at the end of the array
-        }
+        // o.insertAtStart(a, 1);
+        // o.insertAtStart(a, 2);
+        // o.deleteAtIndex(a, 1);
+        // o.print(a);
+        d.insertAtBegin(1);
+        d.insertAtBegin(2);
+        d.deleteAtIndex(1);
         d.display();
-
-        // Test inserting an element at the beginning
-        System.out.println("\nInserting 0 at the beginning:");
-        d.insertAtBegin(0);
-        d.display();
-
-        // Test inserting an element at a specific index
-        System.out.println("\nInserting 99 at index 3:");
-        d.insertAtIndex(99, 3);
-        d.display();
-
-        // Test deleting the first element
-        System.out.println("\nDeleting the first element:");
-        d.deleteAtStart();
-        d.display();
-
-        // Test deleting an element at a specific index
-        System.out.println("\nDeleting element at index 2:");
-        d.deleteAtIndex(2);
-        d.display();
-
-        // Test deleting the last element
-        System.out.println("\nDeleting the last element:");
-        d.deleteAtEnd();
-        d.display();
-
-        // Test attempting to delete from an empty array
-        System.out.println("\nClearing the array and attempting to delete from an empty array:");
-        while (d.count > 0) {
-            d.deleteAtEnd();
-        }
-        try {
-            d.deleteAtEnd(); // Attempt to delete from an empty array
-        } catch (IllegalStateException e) {
-            System.out.println(e.getMessage()); // Expect an "Array is empty" error
-        }
     }
 
     // Constructor to initialize the array with a starting size of 1
