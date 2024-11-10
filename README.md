@@ -17,3 +17,11 @@ java StaticArray
 java DynamicArray
 ```
 [Report for question 1](./sheet1/question1/report.md)
+
+To run question 2:
+```bash
+cd sheet1/question2
+javac StringOperations.java
+java StringOperations
+```
+[Report for question 2](./sheet1/question2/report.md)
