@@ -36,19 +36,19 @@ public class StringOperations {
     StringOperations operations = new StringOperations();
 
     // Test concatenation
-    String concatResult = operations.concatenate("Hello", " World");
+    String concatResult = operations.concatenate("hello", "world");
     System.out.println("Concatenated String: " + concatResult);
 
     // Test substring
-    String substringResult = operations.substring("Hello World", 0, 5);
+    String substringResult = operations.substring("helloworld", 3, 5);
     System.out.println("Substring: " + substringResult);
 
     // Test comparison
-    boolean compareResult = operations.compare("Hello", "Hello");
+    boolean compareResult = operations.compare("helloworld", "lo");
     System.out.println("Strings are equal: " + compareResult);
 
     // Test character frequency
-    HashMap<Character, Integer> frequency = operations.characterFrequency("hello world");
+    HashMap<Character, Integer> frequency = operations.characterFrequency("hello");
     System.out.println("Character Frequency: " + frequency);
   }
 }
